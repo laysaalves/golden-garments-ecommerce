@@ -7,17 +7,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db-seed": "NODE_ENV=development prisma db seed"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
     "nuxt": "^3.12.3",
     "prisma": "^5.17.0",
+    "tsx": "^4.16.2",
     "vue": "latest"
   },
   "devDependencies": {
+    "@types/node": "^20.14.11",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.6"
+    "tailwindcss": "^3.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
   }
 }
