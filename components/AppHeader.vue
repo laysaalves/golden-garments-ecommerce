@@ -1,16 +1,23 @@
 <template>
   <Card>
-    <CardContent>
-      <Button variant="outline" size="icon">
-        <MenuIcon />
-      </Button>
+    <CardContent class="flex flex-row p-6 items-center justify-between">
+      <AppSidebar/>
+        <AppLogo/>
+          <Search/>
+        <div class="flex flex-row items-center gap-2">
+          <AccountButton/>
+          <Cart/>
+        </div>
     </CardContent>
   </Card>
 </template>
 
 <script lang="ts" setup>
-import { MenuIcon } from 'lucide-vue-next'
 import Card from './ui/card/Card.vue';
 import CardContent from './ui/card/CardContent.vue';
-import Button from './ui/button/Button.vue';
+import AppLogo from './AppLogo.vue';
+import AppSidebar from './AppSidebar.vue';
+import Cart from './Cart.vue';
+import AccountButton from './AccountButton.vue';
+import Search from './Search.vue';
 </script>
