@@ -3,6 +3,7 @@
     <Button
       variant="outline"
       size="icon"
+      @click="$router.push('/login')"
     >
       <UserRound />
     </Button>
