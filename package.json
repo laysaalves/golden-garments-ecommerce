@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
+    "@vee-validate/zod": "^4.13.2",
     "@vueuse/core": "^10.11.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -23,16 +24,20 @@
     "prisma": "^5.17.0",
     "radix-vue": "^1.9.2",
     "shadcn-nuxt": "^0.10.4",
+    "shadcn-vue": "^0.10.5",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "tsx": "^4.16.2",
-    "vue": "latest"
+    "vee-validate": "^4.13.2",
+    "vue": "latest",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@types/node": "^20.14.11",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
+    "prettier": "^3.3.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   }
