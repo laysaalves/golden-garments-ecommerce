@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:hidden">
+  <div class="lg:hidden">
     <Button variant="outline" size="icon">
     <MenuIcon/>
   </Button>

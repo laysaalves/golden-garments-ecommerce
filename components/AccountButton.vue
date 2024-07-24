@@ -1,5 +1,5 @@
 <template>
-  <div class="max-sm:hidden">
+  <div class="max-lg:hidden">
     <Button variant="outline" size="icon">
     <UserRound/>
   </Button>
