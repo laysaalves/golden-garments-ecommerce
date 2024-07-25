@@ -11,5 +11,4 @@
 
 <script lang="ts" setup>
 import { MenuIcon } from 'lucide-vue-next'
-import Button from './ui/button/Button.vue'
 </script>

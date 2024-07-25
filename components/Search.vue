@@ -13,6 +13,5 @@
 </template>
 
 <script lang="ts" setup>
-import Input from './ui/input/Input.vue'
 import { Search } from 'lucide-vue-next'
 </script>
