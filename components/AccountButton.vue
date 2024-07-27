@@ -2,10 +2,9 @@
   <div class="max-lg:hidden">
     <Button
       variant="outline"
-      size="icon"
       @click="$router.push('/login')"
     >
-      <UserRound />
+      <UserRound class="w-5 h-5 mr-2.5" /> Olá, Laysa Alves
     </Button>
   </div>
 </template>
