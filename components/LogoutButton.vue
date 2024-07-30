@@ -2,15 +2,15 @@
   <div v-if="isSidebarItemShow">
     <Button
       variant="outline"
-      @click="$router.push('/login')"
+      size="icon"
     >
-      <UserRound class="w-5 h-5 mr-2.5" /> Olá, Laysa Alves
+      <LogOutIcon class="w-5 h-5 opacity-65" />
     </Button>
   </div>
 </template>
 
-<script lang="ts" setup>
-import { UserRound } from 'lucide-vue-next'
+<script setup lang="ts">
+import { LogOutIcon } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
 const { isSidebarItemShow } = useBreakpoint()
 </script>

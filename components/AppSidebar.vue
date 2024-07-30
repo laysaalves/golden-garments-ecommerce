@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:hidden">
+  <div v-if="isSidebarShow">
     <Sheet>
       <SheetTrigger as-child>
         <Button
@@ -14,7 +14,13 @@
           <SheetTitle>Menu</SheetTitle>
           <Separator class="mt-3" />
         </SheetHeader>
-        
+        <div class="flex items-center gap-3">
+          <div>
+            <Search />
+            <AccountButton v-if="isSidebarItemShow" />
+            <LogoutButton />
+          </div>
+        </div>
       </SheetContent>
     </Sheet>
   </div>
@@ -22,4 +28,6 @@
 
 <script setup lang="ts">
 import { MenuIcon } from 'lucide-vue-next'
+import { useBreakpoint } from '@/composables/useBreakpoint'
+const { isSidebarShow, isSidebarItemShow } = useBreakpoint()
 </script>
