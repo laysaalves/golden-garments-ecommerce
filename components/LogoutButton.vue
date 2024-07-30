@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isSidebarItemShow">
+  <div v-if="SidebarItemShow">
     <Button
       variant="outline"
       size="icon"
@@ -12,5 +12,5 @@
 <script setup lang="ts">
 import { LogOutIcon } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
-const { isSidebarItemShow } = useBreakpoint()
+const { SidebarItemShow } = useBreakpoint()
 </script>

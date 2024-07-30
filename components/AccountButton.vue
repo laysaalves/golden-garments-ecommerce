@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isSidebarItemShow">
+  <div v-if="SidebarItemShow">
     <Button
       variant="outline"
       @click="$router.push('/login')"
@@ -12,5 +12,5 @@
 <script lang="ts" setup>
 import { UserRound } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
-const { isSidebarItemShow } = useBreakpoint()
+const { SidebarItemShow } = useBreakpoint()
 </script>
