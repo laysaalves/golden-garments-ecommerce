@@ -1,16 +1,17 @@
 <template>
-  <div v-if="SidebarItemShow">
+  <div v-if="sidebarItemShow">
     <Button
       variant="outline"
       @click="$router.push('/login')"
+      size="lg"
     >
-      <UserRound class="w-5 h-5 mr-2.5" /> Olá, Laysa Alves
+      <UserCircle2 class="w-5 h-5 mr-2.5 text-yellow-500" /> Faça o login
     </Button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { UserRound } from 'lucide-vue-next'
+import { UserCircle2 } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
-const { SidebarItemShow } = useBreakpoint()
+const { sidebarItemShow } = useBreakpoint()
 </script>

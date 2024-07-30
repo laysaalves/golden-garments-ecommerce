@@ -4,14 +4,14 @@ import { useMediaQuery } from '@vueuse/core'
 export function useBreakpoint() {
   const isMobile = useMediaQuery('(max-width: 1092px)')
 
-  const SidebarShow = computed(() => isMobile.value)
-  const HeaderContentShow = computed(() => !isMobile.value && !SidebarShow.value)
-  const SidebarItemShow = computed(() => isMobile.value !== HeaderContentShow.value)
+  const sidebarShow = computed(() => isMobile.value)
+  const headerContentShow = computed(() => !isMobile.value && !sidebarShow.value)
+  const sidebarItemShow = computed(() => isMobile.value !== headerContentShow.value)
 
   return {
     isMobile,
-    SidebarShow,
-    SidebarItemShow,
-    HeaderContentShow,
+    sidebarShow,
+    sidebarItemShow,
+    headerContentShow,
   }
 }
