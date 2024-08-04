@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative w-full max-w-xl items-center"
-    v-if="SidebarItemShow"
+    v-if="sidebarItemShow"
   >
     <Input
       id="search"
@@ -18,5 +18,5 @@
 <script lang="ts" setup>
 import { Search } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
-const { SidebarItemShow } = useBreakpoint()
+const { sidebarItemShow } = useBreakpoint()
 </script>
