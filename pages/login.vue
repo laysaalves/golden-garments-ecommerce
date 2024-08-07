@@ -4,11 +4,17 @@
       <h1 class="mb-6 text-center text-2xl">Login</h1>
       <form>
         <Input
+          placeholder="Seu nome"
+          required
+          id="email"
+          type="email"
+          class="mb-1.5"
+        />
+        <Input
           placeholder="E-mail"
           required
           id="email"
           type="email"
-          v-model="user.email"
           class="mb-1.5"
         />
         <Input
@@ -16,7 +22,6 @@
           required
           id="password"
           type="password"
-          v-model="user.password"
           class="mb-1"
         />
         <div>
@@ -41,6 +46,7 @@
           <Button
             variant="outline"
             class="min-w-[175px]"
+            @click="signInWithGoogle"
           >
             <img
               src="/googleIcon.svg"
@@ -54,9 +60,26 @@
   </main>
 </template>
 
-<script lang="ts" setup>
-const user = ref({
-  email: '',
-  password: '',
-})
+<script setup>
+import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
+const auth = useFirebaseAuth()
+const router = useRouter()
+
+import { useUserAuthStore } from '~/stores/userAuth'
+const userAuth = useUserAuthStore()
+
+function signInWithGoogle() {
+  signInWithPopup(auth, new GoogleAuthProvider())
+  .then((result) => {
+    const user = result.user
+    userAuth.setUser({
+      displayName: user.displayName,
+      imageUrl: user.photoURL,
+    })
+    router.push('/')
+    .catch((error) => {
+      console.error('Erro ao logar com o Google', error)
+    })
+  })
+}
 </script>

@@ -7,6 +7,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss", 
     "shadcn-nuxt",
     "nuxt-vuefire",
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
   ],
   shadcn: {
     prefix: "",
@@ -24,5 +26,8 @@ export default defineNuxtConfig({
       messagingSenderId: "741890818255",
       appId: "1:741890818255:web:8f5879101363506bccf7ba"
     }
+  },
+  pinia: {
+    storesDirs: ['./stores/**', './custom-folder/stores/**'],
   },
 });

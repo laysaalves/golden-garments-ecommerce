@@ -23,7 +23,7 @@
               @click="$router.push('/')"
             >
               <HomeIcon class="w-5 h-5 mr-2.5 text-yellow-500" /> Voltar ao início
-            </Button> 
+            </Button>
             <Button
               variant="outline"
               class="w-full"
@@ -34,6 +34,7 @@
         </div>
         <div class="flex flex-row gap-2 mt-6 justify-center items-center">
           <AccountButton />
+          <LogoutButton v-if="user.UserAuth !== null" />
         </div>
       </SheetContent>
     </Sheet>
@@ -44,4 +45,5 @@
 import { HomeIcon, MenuIcon, ShoppingBasket } from 'lucide-vue-next'
 import { useBreakpoint } from '@/composables/useBreakpoint'
 const { sidebarShow } = useBreakpoint()
+const user = useUserAuthStore()
 </script>
