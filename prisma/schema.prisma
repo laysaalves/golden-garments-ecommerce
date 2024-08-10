@@ -31,22 +31,22 @@ model Product {
   categoryId         String
   category           Category @relation(fields: [categoryId], references: [id])
   cartId             String?
-  cart               Cart?      @relation(fields: [cartId], references: [id])
+  cart               Cart?    @relation(fields: [cartId], references: [id])
   discountPercentage Int      @default(0)
 }
 
 model User {
-  id    String @id @default(uuid())
-  name  String
-  email String @unique
-  image String
+  id          String  @id @default(uuid())
+  name        String
+  email       String  @unique
+  image       String
   socialLogin Boolean @default(false)
-  carts Cart[]
+  carts       Cart[]
 }
 
 model Cart {
-  id String @id @default(uuid())
-  userId String
-  user User @relation(fields: [userId], references: [id])
-  products Product[] 
+  id       String    @id @default(uuid())
+  userId   String
+  user     User      @relation(fields: [userId], references: [id])
+  products Product[]
 }
