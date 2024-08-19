@@ -5,13 +5,13 @@ export function useBreakpoint() {
   const isMobile = useMediaQuery('(max-width: 1092px)')
 
   const sidebarShow = computed(() => isMobile.value)
-  const headerContentShow = computed(() => !isMobile.value && !sidebarShow.value)
-  const sidebarItemShow = computed(() => isMobile.value !== headerContentShow.value)
+  const topBarContentShow = computed(() => !isMobile.value && !sidebarShow.value)
+  const sidebarItemShow = computed(() => isMobile.value !== topBarContentShow.value)
 
   return {
     isMobile,
     sidebarShow,
     sidebarItemShow,
-    headerContentShow,
+    topBarContentShow,
   }
 }

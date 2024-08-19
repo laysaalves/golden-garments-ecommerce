@@ -1,10 +1,12 @@
 <template>
-  <div class="flex flex-row items-center gap-4">
-    <Shirt class="h-6 w-6 text-yellow-500" />
-    <span class="text-lg font-bold">O ouro dos mantos</span>
-  </div>
+  <NuxtLink to="/">
+    <div class="flex flex-row items-center gap-2">
+      <img
+        src="../assets/images/logo-ball.png"
+        class="w-8 h-8"
+        alt="lOGO ICON"
+      />
+      <h1 class="text-white text-xl font-semibold">OURO DOS MANTOS</h1>
+    </div>
+  </NuxtLink>
 </template>
-
-<script lang="ts" setup>
-import { Shirt } from 'lucide-vue-next'
-</script>
