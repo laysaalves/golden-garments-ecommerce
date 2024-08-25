@@ -1,5 +1,7 @@
-<h1 align="center" style="font-weight: bold;">O OURO DOS MANTOS - SOCCER T-SHIRTS ECOMMERCE</h1>
+<h1 align="center" style="font-weight: bold;">O OURO DOS MANTOS - SOCCER T-SHIRTS E-COMMERCE</h1>
+<p align="center" style="font-weight: semibold;">
 <a href="https://github.com/laysaalves/ourodosmantos-ecommerce/blob/main/README-PTBR.md">Don't speak English? Click here. I also wrote this README in Portuguese!</a>
+</p>
 
 <p align="center">
   <a href="#feat">Features</a> |
@@ -10,27 +12,28 @@
 </p>
 
 <p align="center">
-  <img alt="project home page" width="600px" src="./.github/print-home.PNG" />
+  <img alt="project home page" width="600px" src="./.github/assets/print-home.PNG" />
 <p>
 
 <h2 id="feat">Features</h2>
 
 | feature | status | description    
-| --- | --- | --- |
-| Login with Google Account | :white_check_mark  | Using VueFire.  
-| Profile details button | :white_check_mark  | Users authenticated with Google Account can see their image and username in the topBar of web app or sidebar of mobile app, a transition created with the composable useBreakpoint.
-| soon | :white_large_square | soon
+| ------------- | ------------- | ------------- |
+| `Login with Google Account` | :white_check_mark:  | Using **VueFire**.  
+| `Profile details button` | :white_check_mark:  | Users authenticated with Google Account can see their image and username in the topBar of web app or sideBar of mobile app, a transition created with the **composable useBreakpoint**.
+| `soon` | :white_large_square: | soon
 
 <h2 id="techs">Used technologies</h2>
 
-- NuxtJS
-- Pinia
-- Prisma
-- PostgreSQL
-- NeonDB
-- TypeScript
-- TailwindCSS
-- Shadcn-vue
+- [NuxtJS](https://nuxtjs.org/)
+- [VueFire](https://vuefire.vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Prisma](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [NeonDB](https://neon.tech/docs/introduction)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Shadcn-vue](https://www.shadcn-vue.com/)
 
 <h2 id="started">Getting started</h2>
 
