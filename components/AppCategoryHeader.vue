@@ -1,14 +1,12 @@
 <template>
-  <div class="flex flex-row items-center justify-center gap-4 p-10">
-    <NuxtLink to="/">
-      <ArrowLeftFromLine class="text-yellow-500 w-6 h-6" />
-    </NuxtLink>
-    <h1 class="text-xl">{{ props.title }}</h1>
+  <div class="flex flex-row items-center lg:justify-center p-10">
+    <div class="border-b-2 border-yellow-500">
+      <h1 class="text-xl uppercase">{{ props.title }}</h1>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ArrowLeftFromLine } from 'lucide-vue-next'
 type Props = {
   title: string
 }
