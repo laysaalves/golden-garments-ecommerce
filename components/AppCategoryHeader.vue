@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row items-center lg:justify-center p-10">
+  <div class="flex flex-row items-center lg:justify-center md:justify-center p-10">
     <div class="border-b-2 border-yellow-500">
       <h1 class="text-xl uppercase">{{ props.title }}</h1>
     </div>
