@@ -1,6 +1,5 @@
 <template>
-  <AppCategoryHeader title="Brasileirão Série A" />
-  <div class="flex items-center justify-center p-7">
+  <div class="flex items-center justify-center p-14">
     <div class="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-4 gap-8">
       <div
         v-for="product in products"
@@ -42,9 +41,13 @@
 </template>
 
 <script lang="ts" setup>
-const { data: products } = await useFetch(`/api/products`)
+import { ArrowDown } from 'lucide-vue-next'
 
-import { ArrowDown } from 'lucide-vue-next';
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+const categoryId = route.query.categoryId
+const { data: products } = await useFetch(`/api/products`, { query: { categoryId } })
 
 function discountedPrice(basePrice: number, discount: number): number {
   const discountPercentage = basePrice * (discount / 100)

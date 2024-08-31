@@ -4,7 +4,7 @@
     :key="category.id"
   >
     <Card class="min-w-[167px] rounded-full border-zinc-900">
-      <NuxtLink :to="`/category/${category.slug}`">
+      <NuxtLink :to="{ path: `/category/productsByCategory`, query: { categoryId: category.id } }">
         <CardContent class="p-0 pt-1">
           <div class="flex justify-center items-center h-[159px] w-full">
             <img
@@ -16,7 +16,7 @@
         </CardContent>
       </NuxtLink>
     </Card>
-    <NuxtLink :to="`/category/${category.slug}`">
+    <NuxtLink :to="{ path: `/category/productsByCategory`, query: { categoryId: category.id } }">
       <div class="flex justify-center items-center mt-4">
         <span class="text-xs font-bold text-yellow-500">{{ category.name }}</span>
       </div>
