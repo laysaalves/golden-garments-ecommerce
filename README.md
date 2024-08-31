@@ -1,6 +1,6 @@
 <h1 align="center" style="font-weight: bold;">O OURO DOS MANTOS - SOCCER T-SHIRTS E-COMMERCE</h1>
 <p align="center" style="font-weight: semibold;">
-<a href="https://github.com/laysaalves/ourodosmantos-ecommerce/blob/main/README-PTBR.md">Don't speak English? Click here. I also wrote this README in Portuguese!</a>
+<a href="https://github.com/laysaalves/ourodosmantos-ecommerce/blob/main/README-PTBR.md">Não lê em Inglês? Clique aqui. Eu também fiz esse README em Português!</a>
 </p>
 
 <p align="center">
