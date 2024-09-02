@@ -6,7 +6,7 @@
         :key="product.id"
       >
         <Card class="min-w-[167px] max-w-[167px] rounded-lg">
-          <NuxtLink :to="`/product/${product.slug}`">
+          <NuxtLink :to="{ path: `/product/productsPreCart`, query: { productId: product.id } }">
             <CardContent class="p-1 mb-1">
               <div class="w-full h-[159px] relative cursor-pointer">
                 <Badge
@@ -43,11 +43,10 @@
 <script lang="ts" setup>
 import { ArrowDown } from 'lucide-vue-next'
 
-import { useRoute } from 'vue-router'
 const route = useRoute()
 
 const categoryId = route.query.categoryId
-const { data: products } = await useFetch(`/api/products`, { query: { categoryId } })
+const { data: products } = await useFetch(`/api/products/productList`, { query: { categoryId } })
 
 function discountedPrice(basePrice: number, discount: number): number {
   const discountPercentage = basePrice * (discount / 100)
