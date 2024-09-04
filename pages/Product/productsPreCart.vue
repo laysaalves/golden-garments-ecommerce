@@ -1,40 +1,65 @@
 <template>
-  <div class="flex items-center justify-center p-14">
-    <div class="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-4 gap-8">
-      <div
-        v-for="product in products"
-        :key="product.id"
-      >
-        <Card class="min-w-[167px] max-w-[167px] rounded-lg">
-          <CardContent class="p-1 mb-1">
-            <img
-              :src="product.imageUrls[0]"
-              :alt="`Imagem do produto ${product.name}`"
-              class="h-[159px] w-full rounded-lg"
-            />
-            <img
-              :src="product.imageUrls[1]"
-              :alt="`Imagem do produto ${product.name}`"
-              class="h-[159px] w-full rounded-lg"
-            />
-            <img
-              :src="product.imageUrls[2]"
-              :alt="`Imagem do produto ${product.name}`"
-              class="h-[159px] w-full rounded-lg"
-            />
-            <img
-              :src="product.imageUrls[3]"
-              :alt="`Imagem do produto ${product.name}`"
-              class="h-[159px] w-full rounded-lg"
-            />
-          </CardContent>
-        </Card>
+  <div class="flex items-center justify-center p-12">
+    <div
+      v-for="product in products"
+      :key="product.id"
+    >
+      <div class="md:hidden">
+        <ProductImages />
+        <div class="flex flex-col items-center justify-center mt-2">
+          <ProductDetails />
+        </div>
+        <div class="flex flex-col justify-center items-center gap-6 mt-4">
+          <QuantitySelect />
+          <SizeSelect />
+        </div>
+        <div class="mt-4">
+          <Button class="font-bold w-full uppercase">Adicionar ao carrinho</Button>
+        </div>
+        <div class="mt-6">
+          <Separator
+            label="Mais sobre o produto"
+            class="my-4"
+          />
+          <h2 class="text-justify">{{ product.description }}</h2>
+        </div>
+      </div>
+
+      <div class="hidden md:block">
+        <div class="lg:flex lg:items-center lg:justify-between lg:gap-6">
+          <ProductImages />
+          <Card class="max-w-[600px]">
+            <CardContent>
+              <div class="flex flex-col items-center justify-center mt-2">
+                <ProductDetails />
+              </div>
+              <div class="flex flex-col justify-center items-center gap-6 mt-4">
+                <QuantitySelect />
+                <SizeSelect />
+              </div>
+              <div class="mt-4">
+                <Button class="font-bold w-full uppercase">Adicionar ao carrinho</Button>
+              </div>
+              <div class="mt-6">
+                <Separator
+                  label="Mais sobre o produto"
+                  class="my-4"
+                />
+              </div>
+              <h2 class="text-justify">{{ product.description }}</h2>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import QuantitySelect from './components/QuantitySelect.vue'
+import SizeSelect from './components/SizeSelect.vue'
+import ProductImages from './components/ProductImages.vue'
+import ProductDetails from './components/ProductDetails.vue'
 const route = useRoute()
 
 const productId = route.query.productId
