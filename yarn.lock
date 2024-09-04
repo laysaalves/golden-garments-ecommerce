@@ -2428,7 +2428,7 @@
     "@vue/compiler-dom" "3.4.33"
     "@vue/shared" "3.4.33"
 
-"@vue/devtools-api@^6.5.1", "@vue/devtools-api@^6.6.3":
+"@vue/devtools-api@^6.5.1", "@vue/devtools-api@^6.6.1", "@vue/devtools-api@^6.6.3":
   version "6.6.3"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.6.3.tgz#b23a588154cba8986bba82b6e1d0248bde3fd1a0"
   integrity sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==
@@ -2538,10 +2538,25 @@
     "@vueuse/shared" "10.11.0"
     vue-demi ">=0.14.8"
 
+"@vueuse/core@^11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-11.0.3.tgz#e5fb5aa6580c6e505cecea43518fcb66cb56a3ef"
+  integrity sha512-RENlh64+SYA9XMExmmH1a3TPqeIuJBNNB/63GT35MZI+zpru3oMRUA6cEFr9HmGqEgUisurwGwnIieF6qu3aXw==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.20"
+    "@vueuse/metadata" "11.0.3"
+    "@vueuse/shared" "11.0.3"
+    vue-demi ">=0.14.10"
+
 "@vueuse/metadata@10.11.0":
   version "10.11.0"
   resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-10.11.0.tgz#27be47cf115ee98e947a1bfcd0b1b5b35d785fb6"
   integrity sha512-kQX7l6l8dVWNqlqyN3ePW3KmjCQO3ZMgXuBMddIu83CmucrsBfXlH+JoviYyRBws/yLTQO8g3Pbw+bdIoVm4oQ==
+
+"@vueuse/metadata@11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-11.0.3.tgz#f3f20066fb5217df24614de92162b65c24475e1b"
+  integrity sha512-+FtbO4SD5WpsOcQTcC0hAhNlOid6QNLzqedtquTtQ+CRNBoAt9GuV07c6KNHK1wCmlq8DFPwgiLF2rXwgSHX5Q==
 
 "@vueuse/nuxt@^10.11.0":
   version "10.11.0"
@@ -2560,6 +2575,13 @@
   integrity sha512-fyNoIXEq3PfX1L3NkNhtVQUSRtqYwJtJg+Bp9rIzculIZWHTkKSysujrOk2J+NrRulLTQH9+3gGSfYLWSEWU1A==
   dependencies:
     vue-demi ">=0.14.8"
+
+"@vueuse/shared@11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-11.0.3.tgz#0e5519dcdc9ac0c6fc831c105a9e7ba7bda98628"
+  integrity sha512-0rY2m6HS5t27n/Vp5cTDsKTlNnimCqsbh/fmT2LgE+aaU42EMfXo8+bNX91W9I7DDmxfuACXMmrd7d79JxkqWA==
+  dependencies:
+    vue-demi ">=0.14.10"
 
 abbrev@1:
   version "1.1.1"
@@ -3869,6 +3891,24 @@ electron-to-chromium@^1.4.820:
   version "1.4.829"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.829.tgz#3034a865b5eac9064c9db8b38ba99b60a446bb73"
   integrity sha512-5qp1N2POAfW0u1qGAxXEtz6P7bO1m6gpZr5hdf5ve6lxpLM7MpiM4jIPz7xcrNlClQMafbyUDDWjlIQZ1Mw0Rw==
+
+embla-carousel-reactive-utils@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.2.0.tgz#2abe9a01d639641617486a41704525c1de506021"
+  integrity sha512-ZdaPNgMydkPBiDRUv+wRIz3hpZJ3LKrTyz+XWi286qlwPyZFJDjbzPBiXnC3czF9N/nsabSc7LTRvGauUzwKEg==
+
+embla-carousel-vue@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/embla-carousel-vue/-/embla-carousel-vue-8.2.0.tgz#37e4e016794d332198194b873000497ae09f6010"
+  integrity sha512-6ySaY7N10j2mqPn9fPFKJPWos5jBgMSFr7uRjqYN2T62dFR/qkpTqj1KLNhS25CQ0rBAnVpdbT+wzp6fazUURw==
+  dependencies:
+    embla-carousel "8.2.0"
+    embla-carousel-reactive-utils "8.2.0"
+
+embla-carousel@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-8.2.0.tgz#b6cee975d4f43f127a77787673477bf618df7610"
+  integrity sha512-rf2GIX8rab9E6ZZN0Uhz05746qu2KrDje9IfFyHzjwxLwhvGjUt6y9+uaY1Sf+B0OPSa3sgas7BE2hWZCtopTA==
 
 emit-function@0.0.2:
   version "0.0.2"
@@ -8090,6 +8130,11 @@ type-fest@^3.8.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.13.1.tgz#bb744c1f0678bea7543a2d1ec24e83e68e8c8706"
   integrity sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==
 
+type-fest@^4.8.3:
+  version "4.26.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.26.0.tgz#703f263af10c093cd6277d079e26b9e17d517c4b"
+  integrity sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==
+
 type-is@^1.6.16, type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-1.6.18.tgz#4e552cd05df09467dcbc4ef739de89f2cf37c131"
@@ -8369,6 +8414,14 @@ vary@^1, vary@^1.1.2, vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
+vee-validate@^4.13.2:
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/vee-validate/-/vee-validate-4.13.2.tgz#cf601c9ac029d58a15aecc1dbab28b15628f0a0e"
+  integrity sha512-HlpR/6MJ92TW9f135umMZKUqdd/tFQTxLNSf2ImbU4Y/MlLVAUpF1l64VdjTOhbClAqPjCb5p/SqHDxLpUHXrw==
+  dependencies:
+    "@vue/devtools-api" "^6.6.1"
+    type-fest "^4.8.3"
+
 vite-hot-client@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/vite-hot-client/-/vite-hot-client-0.2.3.tgz#db52aba46edbcfa7906dbca8255fd35b9a9270b2"
@@ -8507,7 +8560,7 @@ vue-demi@>=0.13.0, vue-demi@>=0.14.8:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.8.tgz#00335e9317b45e4a68d3528aaf58e0cec3d5640a"
   integrity sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==
 
-vue-demi@^0.14.10, vue-demi@^0.14.8, vue-demi@latest:
+vue-demi@>=0.14.10, vue-demi@^0.14.10, vue-demi@^0.14.8, vue-demi@latest:
   version "0.14.10"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.10.tgz#afc78de3d6f9e11bf78c55e8510ee12814522f04"
   integrity sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==
@@ -8746,7 +8799,7 @@ zip-stream@^6.0.1:
     compress-commons "^6.0.2"
     readable-stream "^4.0.0"
 
-zod@^3.23.3:
+zod@^3.23.3, zod@^3.23.8:
   version "3.23.8"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.8.tgz#e37b957b5d52079769fb8097099b592f0ef4067d"
   integrity sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==
