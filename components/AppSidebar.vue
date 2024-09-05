@@ -27,6 +27,7 @@
             <Button
               variant="outline"
               class="w-full"
+              @click="$router.push('/category/page')"
             >
               <ShoppingBasket class="w-5 h-5 mr-2.5 text-yellow-500" /> Categorias
             </Button>
