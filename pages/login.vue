@@ -61,7 +61,8 @@
 </template>
 
 <script setup>
-initializeApp();
+initializeApp()
+import { initializeApp } from 'firebase-admin';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 const auth = useFirebaseAuth()
 const router = useRouter()
