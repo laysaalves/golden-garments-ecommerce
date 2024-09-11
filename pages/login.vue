@@ -1,5 +1,5 @@
 <template>
-  <main class="flex min-h-screen flex-col items-center justify-center p-20">
+  <main class="flex items-center justify-center p-36">
     <div class="mx-auto w-full max-w-[500px] rounded-md border p-6">
       <h1 class="mb-6 text-center text-2xl">Login</h1>
       <form>
@@ -61,6 +61,7 @@
 </template>
 
 <script setup>
+initializeApp();
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 const auth = useFirebaseAuth()
 const router = useRouter()
