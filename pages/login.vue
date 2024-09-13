@@ -46,7 +46,6 @@
           <Button
             variant="outline"
             class="min-w-[175px]"
-            @click="signInWithGoogle"
           >
             <img
               src="/googleIcon.svg"
@@ -61,27 +60,27 @@
 </template>
 
 <script setup>
-initializeApp()
-import { initializeApp } from 'firebase-admin';
-import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
-const auth = useFirebaseAuth()
-const router = useRouter()
+// initializeApp()
+// import { initializeApp } from 'firebase-admin';
+// import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
+// const auth = useFirebaseAuth()
+// const router = useRouter()
 
-import { useUserAuthStore } from '~/stores/userAuth'
-const userAuth = useUserAuthStore()
+// import { useUserAuthStore } from '~/stores/userAuth'
+// const userAuth = useUserAuthStore()
 
-function signInWithGoogle() {
-  signInWithPopup(auth, new GoogleAuthProvider())
-  .then((result) => {
-    const user = result.user
-    userAuth.setUser({
-      displayName: user.displayName,
-      imageUrl: user.photoURL,
-    })
-    router.push('/')
-    .catch((error) => {
-      console.error('Erro ao logar com o Google', error)
-    })
-  })
-}
+// function signInWithGoogle() {
+//   signInWithPopup(auth, new GoogleAuthProvider())
+//   .then((result) => {
+//     const user = result.user
+//     userAuth.setUser({
+//       displayName: user.displayName,
+//       imageUrl: user.photoURL,
+//     })
+//     router.push('/')
+//     .catch((error) => {
+//       console.error('Erro ao logar com o Google', error)
+//     })
+//   })
+// }
 </script>
