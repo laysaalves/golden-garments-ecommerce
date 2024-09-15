@@ -19,8 +19,8 @@
 
 | feature | status | description    
 | ------------- | ------------- | ------------- |
-| `Login with Google Account` | :white_check_mark:  | Using **VueFire**.  
-| `Profile details button` | :white_check_mark:  | Users authenticated with Google Account can see their image and username in the topBar of web app or sideBar of mobile app, a transition created with the **composable useBreakpoint**.
+| `Login with Google Account` | :white_large_square:  | Using **VueFire**.  
+| `Profile details button` | :white_large_square:  | Users authenticated with Google Account can see their image and username in the topBar of web app or sideBar of mobile app, a transition created with the **composable useBreakpoint**.
 | `soon` | :white_large_square: | soon
 
 <h2 id="techs">Used technologies</h2>

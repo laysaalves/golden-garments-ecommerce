@@ -19,8 +19,8 @@
 
 | funcionalidade | status | descrição    
 | ------------- | ------------- | ------------- |
-| `Login com a conta do Google` | :white_check_mark:  | Usando **VueFire**.  
-| `Botão de detalhes do perfil do usuário` | :white_check_mark:  | Usuários autenticados com a conta do Google podem ver sua imagem e nome de usuário na barra superior da aplicação web ou na barra lateral da aplicação mobile, transição criada com o **composable useBreakpoint**.
+| `Login com a conta do Google` | :white_large_square:  | Usando **VueFire**.  
+| `Botão de detalhes do perfil do usuário` | :white_large_square:  | Usuários autenticados com a conta do Google podem ver sua imagem e nome de usuário na barra superior da aplicação web ou na barra lateral da aplicação mobile, transição criada com o **composable useBreakpoint**.
 | `em breve` | :white_large_square: | em breve
 
 <h2 id="techs">Tecnologias usadas</h2>
