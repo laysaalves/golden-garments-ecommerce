@@ -1,67 +1,27 @@
 <template>
-  <main class="flex items-center justify-center p-36">
-    <div class="mx-auto w-full max-w-[500px] rounded-md border p-6">
-      <h1 class="mb-6 text-center text-2xl">Login</h1>
-      <form>
-        <Input
-          placeholder="Seu nome"
-          required
-          id="email"
-          type="email"
-          class="mb-1.5"
-        />
-        <Input
-          placeholder="E-mail"
-          required
-          id="email"
-          type="email"
-          class="mb-1.5"
-        />
-        <Input
-          placeholder="Senha"
-          required
-          id="password"
-          type="password"
-          class="mb-1"
-        />
-        <div>
-          <div class="flex justify-end pt-2 pb-6">
-            <NuxtLink
-              to="/forgotpassword"
-              class="text-sm font-semibold"
-            >
-              Esqueceu a senha?
-            </NuxtLink>
-          </div>
-          <Button
-            type="submit"
-            class="text-md w-full font-bold"
-            >Entrar</Button
-          >
-        </div>
-        <div class="mx-6 pt-6">
-          <Separator label="OU" />
-        </div>
-        <div class="flex justify-center pt-6">
-          <Button
-            variant="outline"
-            class="min-w-[175px]"
-          >
-            <img
-              src="/googleIcon.svg"
-              alt="google icon"
-              class="h-6 w-6"
-            />
-          </Button>
-        </div>
-      </form>
+  <div class="flex items-center justify-center p-36">
+    <div class="mx-auto w-full max-w-[500px] min-w-[300px] rounded-md border p-4">
+      <h1 class="text-center text-2xl font-bold text-yellow-500">
+        Faça o login para adquirir seu manto!
+      </h1>
+      <div class="flex justify-center pt-6">
+        <Button
+          variant="outline"
+          class="w-full gap-2 font-medium text-sm"
+        >
+          <img
+            src="/googleIcon.svg"
+            alt="google icon"
+            class="h-6 w-6"
+          />
+          Sign up with Google
+        </Button>
+      </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script setup>
-// initializeApp()
-// import { initializeApp } from 'firebase-admin';
 // import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 // const auth = useFirebaseAuth()
 // const router = useRouter()
