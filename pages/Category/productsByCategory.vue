@@ -5,7 +5,7 @@
         v-for="product in products"
         :key="product.id"
       >
-        <Card class="min-w-[167px] max-w-[167px] rounded-lg">
+        <Card class="w-[167px] h-[328px] rounded-lg">
           <NuxtLink :to="{ path: `/product/productsPreCart`, query: { productId: product.id } }">
             <CardContent class="p-1 mb-1">
               <div class="w-full h-[159px] relative cursor-pointer">
@@ -19,7 +19,7 @@
                 </Badge>
                 <img
                   :src="product.imageUrls[0]"
-                  class="h-[159px] w-full rounded-lg"
+                  class="h-full w-full rounded-lg"
                   :alt="`Imagem do produto ${product.name}`"
                 />
               </div>
