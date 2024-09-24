@@ -35,3 +35,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+html, body {
+  @apply scrollbar-thin scrollbar-thumb-yellow-500 scrollbar-track-accent;
+}
